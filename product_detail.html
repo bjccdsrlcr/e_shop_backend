@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matrix Admin</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/colorpicker.css"/>
+    <link rel="stylesheet" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/uniform.css"/>
+    <link rel="stylesheet" href="css/select2.css"/>
+    <link rel="stylesheet" href="css/matrix-style2.css"/>
+    <link rel="stylesheet" href="css/matrix-media.css"/>
+    <link rel="stylesheet" href="css/bootstrap-wysihtml5.css"/>
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
+
+    <style>
+        .control-group .controls label {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <div id="content-header">
+        <h1>普通表单</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-9 col-sm-8">
+                <h2>商品详情</h2>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th><a>商品名称</a></th>
+                        <th><a>商品分类</a></th>
+                        <th><a>二级分类</a></th>
+                        <th><a>品牌</a></th>
+                        <th><a>货号</a></th>
+                        <th><a>单位</a></th>
+                        <th><a>库存</a></th>
+                        <th><a>价格</a></th>
+                        <th><a>状态</a></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>${product_info.name}</td>
+                        <td>${product_info.category_id}</td>
+                        <td>${product_info.subcategory_id}</td>
+                        <td>${product_info.brand_id}</td>
+                        <td>${product_info.CAS}</td>
+                        <td>${product_info.unit}</td>
+                        <td>${product_info.stock}</td>
+                        <td>${product_info.price}</td>
+                        <td>${product_info.undercarriage}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-colorpicker.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.toggle.buttons.html"></script>
+<script src="js/masked.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/matrix.form_common.js"></script>
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/jquery.peity.min.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
+<script>
+    $('.textarea_editor').wysihtml5();
+</script>
+</body>
+</html>

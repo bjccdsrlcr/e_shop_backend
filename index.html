@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>后台管理模板</title>
+    <title>供应商后台</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -14,7 +14,7 @@
 <body>
     <!--Header-part-->
     <div id="header">
-      <h1><a href="dashboard.html">信息管理系统平台</a></h1>
+      <h1><a href="dashboard.html">供应商后台管理</a></h1>
     </div>
     <!--close-Header-part--> 
 
@@ -67,73 +67,15 @@
 
     <!--sidebar-menu-->
     <div id="sidebar" style="OVERFLOW-Y: auto; OVERFLOW-X:hidden;">
-        <!--<ul>-->
-            <!--<li class="submenu active">-->
-                <!--<a class="menu_a" link="index2.html"><i class="icon icon-home"></i> <span>控制面板</span></a>-->
-            <!--</li>-->
-            <!--<li class="submenu">-->
-                <!--<a href="#">-->
-                    <!--<i class="icon icon-table"></i>-->
-                    <!--<span>表单</span>-->
-                    <!--<span class="label label-important">3</span>-->
-                <!--</a>-->
-                <!--<ul>-->
-                    <!--<li><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>基本表单</a></li>-->
-                    <!--<li><a class="menu_a" link="form-validation.html"><i class="icon icon-caret-right"></i>校验表单</a></li>-->
-                    <!--<li><a class="menu_a" link="form-wizard.html"><i class="icon icon-caret-right"></i>密码修改样式表单</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
-            <!--<li class="submenu">-->
-				<!--<a href="#">-->
-                    <!--<i class="icon icon-th"></i>-->
-                    <!--<span>布局表格组件</span>-->
-                    <!--<span class="label label-important">6</span>-->
-                <!--</a>-->
-				<!--<ul>-->
-                    <!--<li><a class="menu_a" link="buttons.html"><i class="icon icon-caret-right"></i> 按钮 &amp; 图标</a></li>-->
-                    <!--<li><a class="menu_a" link="grid.html"><i class="icon icon-caret-right"></i>页面布局</a></li>-->
-                    <!--<li><a class="menu_a" link="tables.html"><i class="icon icon-caret-right"></i>表格</a></li>-->
-                    <!--<li><a class="menu_a" link="widgets.html"><i class="icon icon-caret-right"></i>插件</a></li>-->
-					<!--<li><a class="menu_a" link="charts.html"><i class="icon icon-caret-right"></i>曲线图 &amp; 统计图</a></li>-->
-					<!--<li><a class="menu_a" link="interface.html"><i class="icon icon-caret-right"></i>元素</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
-            <!--<li class="submenu">-->
-                <!--<a href="#">-->
-                    <!--<i class="icon icon-stop"></i>-->
-                    <!--<span>其他组件</span>-->
-                    <!--<span class="label label-important">5</span>-->
-                <!--</a>-->
-                <!--<ul>-->
-                    <!--<li><a class="menu_a" link="gallery.html"><i class="icon icon-caret-right"></i>图片墙</a></li>-->
-                    <!--<li><a class="menu_a" link="calendar.html"><i class="icon icon-caret-right"></i>日历</a></li>-->
-                    <!--<li><a class="menu_a" link="invoice.html"><i class="icon icon-caret-right"></i>清单示例</a></li>-->
-                    <!--<li><a class="menu_a" link="chat.html"><i class="icon icon-caret-right"></i>聊天</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
-            <!--<li class="submenu">-->
-                <!--<a href="#">-->
-                    <!--<i class="icon icon-info-sign"></i>-->
-                    <!--<span>错误页面</span>-->
-                    <!--<span class="label label-important">4</span>-->
-                <!--</a>-->
-                <!--<ul>-->
-                    <!--<li><a class="menu_a" link="error403.html"><i class="icon icon-caret-right"></i>Error 403</a></li>-->
-                    <!--<li><a class="menu_a" link="error404.html"><i class="icon icon-caret-right"></i>Error 404</a></li>-->
-                    <!--<li><a class="menu_a" link="error405.html"><i class="icon icon-caret-right"></i>Error 405</a></li>-->
-                    <!--<li><a class="menu_a" link="error500.html"><i class="icon icon-caret-right"></i>Error 500</a></li>-->
-                <!--</ul>-->
-            <!--</li>-->
-        <!--</ul>-->
         <!--<a class="list-title">账户概览</a>-->
         <ul id="accordion" class="accordion">
             <li>
                 <div class="link"><i class="fa fa-leaf"></i>商品管理<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li id="shop"><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>商品列表</a></li>
-                    <li id="publicproducts"><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>分类管理</a></li>
-                    <li id="productlists"><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>品牌管理</a></li>
-                    <li id="add_product"><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>添加商品</a></li>
+                    <li id="shop"><a class="menu_a" link="product_list.html"><i class="icon icon-caret-right"></i>商品列表</a></li>
+                    <li id="publicproducts"><a class="menu_a" link="category_list.html"><i class="icon icon-caret-right"></i>分类管理</a></li>
+                    <li id="productlists"><a class="menu_a" link="brand_list.html"><i class="icon icon-caret-right"></i>品牌管理</a></li>
+                    <li id="add_product"><a class="menu_a" link="add_product.html"><i class="icon icon-caret-right"></i>添加商品</a></li>
                     <li id="add_branchproduct"><a class="menu_a" link="form-common.html"><i class="icon icon-caret-right"></i>批量添加商品</a></li>
                     <!--<li id="mysaled"><a>已卖出产品</a></li>-->
                 </ul>
@@ -149,26 +91,20 @@
                     <li id="concerngood"><a>已关注的商品</a></li>
                 </ul>
             </li>
-            <li>
-                <div class="link"><i class="fa fa-pencil-square-o"></i>询盘管理<i class="fa fa-chevron-down"></i></div>
-                <ul class="submenu">
-                    <li id="buyerxunpanlist"><a>收到的询盘</a></li>
-                    <li id="publishrequire"><a>我的询盘</a></li>
-                </ul>
-            </li>
+
             <li>
                 <div class="link"><i class="fa fa-file-text"></i>订单管理<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li id="myorder"><a>我的订单</a></li>
-                    <li id="myrefund"><a>退款申请</a></li>
+                    <li id="myorder" class="menu_a" link="sale_order_list.html"><a>订单管理</a></li>
+                    <li id="myrefund" class="menu_a" link="return_order_list.html"><a>退货管理</a></li>
                 </ul>
             </li>
             <li>
                 <div class="link"><i class="fa fa-globe"></i>竞价管理<i class="fa fa-chevron-down"></i></div>
                 <ul class="submenu">
-                    <li id="myloan"><a>待竞价</a></li>
-                    <li id="financialmanage"><a>待评估</a></li>
-                    <li id="myapplication"><a>我的申请</a></li>
+                    <li id="myloan" class="menu_a" link="bidding_draft.html"><a>待竞价</a></li>
+                    <li id="financialmanage" class="menu_a" link="bidding_check.html"><a>待评估</a></li>
+                    <li id="myapplication" class="menu_a" link="bidding_result.html"><a>我的申请</a></li>
                 </ul>
             </li>
             <li>

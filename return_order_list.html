@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:top="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Matrix Admin</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/colorpicker.css"/>
+    <link rel="stylesheet" href="css/datepicker.css"/>
+    <link rel="stylesheet" href="css/uniform.css"/>
+    <link rel="stylesheet" href="css/select2.css"/>
+    <link rel="stylesheet" href="css/matrix-style2.css"/>
+    <link rel="stylesheet" href="css/matrix-media.css"/>
+    <link rel="stylesheet" href="css/bootstrap-wysihtml5.css"/>
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
+
+    <style>
+        .control-group .controls label {
+            display: inline-block;
+        }
+    </style>
+    <style>
+        #ul_1 {
+            margin-top: 10px;
+            margin-bottom: 30px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #ul_1 ul {
+            list-style: none;
+        }
+
+        #ul_1 ul li {
+            float: left;
+            width: 100px;
+            text-align: center;
+        }
+
+        #ul_1 ul li a:hover {
+            background-color: red;
+        }
+
+        #ul_2 {
+            margin-bottom: 0;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        #ul_2 ul {
+            list-style: none;
+        }
+
+        #ul_2 ul li {
+            float: left;
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+    <div id="content-header">
+        <h1>订单管理</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row-fluid" id="ul_1">
+            <ul>
+                <li><a class="btn">全部</a></li>
+                <li><a class="btn">退货申请</a></li>
+                <li><a class="btn">退货待发货</a></li>
+                <li><a class="btn">退货待验证</a></li>
+                <li><a class="btn">已完成</a></li>
+                <div style="float: right;">
+                    <input type="text" placeholder="请输入订单编号"/>
+                    <a class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></a>
+                </div>
+            </ul>
+        </div>
+        <div class="row-fluid" id="ul_2">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th><a>商品</a></th>
+                    <th><a>品牌</a></th>
+                    <th><a>单价</a></th>
+                    <th><a>数量</a></th>
+                    <th><a>总金额</a></th>
+                    <th><a>交易状态</a></th>
+                    <th><a>操作</a></th>
+                </tr>
+                </thead>
+            </table>
+            <div class="widget-box">
+                <div class="widget-title"><span class="icon"> <i class="icon-th"></i> </span>
+                    <h5>订单编号:00000001</h5>
+                </div>
+                <div class="widget-content ">
+                    <table class="table table-bordered table-striped with-check data-table">
+                        <tbody>
+                        <c:forEach items="${product_list}" var="product">
+                            <tr>
+                                <td>${product.name}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td><a class="btn btn-mini btn-info" onclick="alertInfo()">确认退货</a>
+                                    <a class="btn btn-mini btn-info" onclick="alertInfo()">拒绝退货</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-title"><span class="icon"> <i class="icon-th"></i> </span>
+                    <h5>订单编号:00000002</h5>
+                </div>
+                <div class="widget-content ">
+                    <table class="table table-bordered table-striped with-check data-table">
+                        <tbody>
+                        <c:forEach items="${product_list}" var="product">
+                            <tr>
+                                <td>${product.name}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td><a class="btn btn-mini btn-info" onclick="alertInfo()">确认退货</a>
+                                    <a class="btn btn-mini btn-info" onclick="alertInfo()">拒绝退货</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="widget-box">
+                <div class="widget-title"><span class="icon"> <i class="icon-th"></i> </span>
+                    <h5>订单编号:00000003</h5>
+                </div>
+                <div class="widget-content ">
+                    <table class="table table-bordered table-striped with-check data-table">
+                        <tbody>
+                        <c:forEach items="${product_list}" var="product">
+                            <tr>
+                                <td>${product.name}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td>${product.brand_id}</td>
+                                <td><a class="btn btn-mini btn-info" onclick="alertInfo()">确认退货</a>
+                                    <a class="btn btn-mini btn-info" onclick="alertInfo()">拒绝退货</a>
+                                </td>
+                            </tr>
+                        </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-colorpicker.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.toggle.buttons.html"></script>
+<script src="js/masked.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/matrix.form_common.js"></script>
+<script src="js/wysihtml5-0.3.0.js"></script>
+<script src="js/jquery.peity.min.js"></script>
+<script src="js/bootstrap-wysihtml5.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/matrix.tables.js"></script>
+<script src="data_js.js"></script>
+
+<script>
+    $('.textarea_editor').wysihtml5();
+</script>
+</body>
+</html>
